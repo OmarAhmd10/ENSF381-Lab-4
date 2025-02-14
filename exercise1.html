@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab4 – Exercise 1</title>
+</head>
+<body>
+<h1>JavaScript Lab</h1>
+<script>
+let myVariable = 10;
+const myConstant = 87;
+const myConstant2 = 99;
+
+console.log(myVariable);
+ myVariable = 20; 
+console.log(myVariable);
+
+//myConstant = 100;
+//console.log("Constant value remains:", myConstant);
+
+let string1 = "Hello, World!";
+let string2 = "JavaScript is fun!";
+
+console.log(string1.length);
+console.log(string1.concat(string2));
+
+let modifiedString2 = string2.replace("fun", "awesome");
+console.log(modifiedString2);
+
+let name = "Alice";
+let age = 25;
+let sent = `My name is ${name} and I am ${age} years old`;
+console.log(sent);
+
+let currentDate = new Date();
+console.log(currentDate);
+
+let year = currentDate.getFullYear();
+let month = currentDate.getMonth() + 1 ; 
+let day = currentDate.getDay();
+
+console.log("Year:", year);
+console.log("Month:", month);
+console.log("Day", day);
+
+let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log("Day of the week:", weekDays[day]);
+</script>
+</body>
+</html>

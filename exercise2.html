@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab4 – Exercise 2</title>
+</head>
+<body>
+<h1>JavaScript Lab</h1>
+<script>
+/*function add(a,b) {
+    return a + b;
+}
+
+function subtract(a,b){
+    return a - b;
+}
+*/
+
+//console.log(add(5,7))
+//console.log(subtract(9,7))
+
+/*function add(a,b= 5) {
+    return a + b;
+}
+
+function subtract(a,b= 0){
+    return a - b;
+}
+*/
+//console.log(add(5))
+//console.log(subtract(9))
+
+let add = (a,b=5) => a + b;
+let subtract = (a,b=0) => a - b;
+let multiply = (a,b) => a * b;
+let divide = (a,b) => {
+    if (b == 0) {
+        console.log("Undefined divide by 0");
+        return null;
+    }
+    return a / b;
+}
+console.log(add(5))
+console.log(subtract(7))
+console.log(multiply(5,3))
+console.log(divide(2,0))
+console.log(divide(2,2))
+
+function calculator(a,b, callback){
+   return callback(a,b);   
+}
+
+console.log(calculator(5,7, add))
+console.log(calculator(5,5, multiply))
+</script>
+</body>
+</html>
